@@ -1,4 +1,4 @@
-import { MapPin, MessageCircle, Mail, Award, Instagram } from 'lucide-react';
+import { MapPin, MessageCircle, Mail, Award } from 'lucide-react';
 
 import logo from '../../assets/logo.webp';
 
@@ -84,7 +84,13 @@ export default function Footer({ id }: { id?: string }) {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="p-2 rounded-lg bg-electric/10 text-electric"><Instagram size={20} /></div>
+                <div className="p-2 rounded-lg bg-electric/10 text-electric">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                  </svg>
+                </div>
                 <div className="flex flex-col">
                   <span className="text-xs text-silver-mist uppercase tracking-wider font-semibold">Instagram</span>
                   <a href="https://instagram.com/dominicalepersonal" target="_blank" rel="noopener noreferrer" className="text-pure-white hover:text-electric transition-colors mt-1 font-medium text-sm">@dominicalepersonal</a>
