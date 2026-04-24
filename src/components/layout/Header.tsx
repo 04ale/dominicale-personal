@@ -69,6 +69,7 @@ export default function Header() {
                         onClick={toggleMenu}
                         className="md:hidden flex items-center justify-center text-pure-white hover:bg-gunmetal-grey h-9 w-9 rounded-md transition-colors"
                         aria-label="Menu"
+                        aria-expanded={isMenuOpen}
                     >
                         {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
                     </button>
