@@ -7,7 +7,7 @@ export default function AboutMe({ id }: { id?: string }) {
       {/* Decorative background glow */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] bg-electric/5 blur-[150px] rounded-full pointer-events-none"></div>
 
-      <div className="container mx-auto px-4 max-w-6xl relative z-10">
+      <div className="container mx-auto px-6 max-w-6xl relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-16">
 
           {/* Image/Photo Area */}
@@ -36,7 +36,7 @@ export default function AboutMe({ id }: { id?: string }) {
             </div>
 
             {/* Experience Badge */}
-            <div className="absolute -bottom-6 -left-6 bg-deep-onyx border border-platinum-light/20 p-4 rounded-2xl shadow-xl flex items-center gap-4">
+            <div className="absolute -bottom-6 left-2 sm:-left-6 bg-deep-onyx border border-platinum-light/20 p-4 rounded-2xl shadow-xl flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-electric/20 flex items-center justify-center">
                 <Trophy size={24} className="text-electric" />
               </div>
@@ -53,7 +53,7 @@ export default function AboutMe({ id }: { id?: string }) {
               Sobre o Treinador
             </span>
 
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 tracking-tight break-words">
               Prazer, sou <span className="text-transparent bg-clip-text bg-linear-to-r from-electric to-pure-white">Lucas Dominicale.</span>
             </h2>
             <h3 className="text-xl md:text-2xl text-silver-mist font-medium mb-8 border-l-4 border-electric pl-4">

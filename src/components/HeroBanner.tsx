@@ -30,7 +30,7 @@ export default function HeroBanner({ id }: { id?: string }) {
                 </div>
 
                 {/* Main Heading */}
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-pure-white tracking-tight leading-[1.1] mb-8 drop-shadow-lg">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-pure-white tracking-tight leading-[1.1] mb-8 drop-shadow-lg px-2 sm:px-0">
                     TRANSFORME SEU CORPO  <br className="hidden md:block" />
                     COM UM <span className="text-electric">MÉTODO PERSONALIZADO</span> — SEM TREINOS GENÉRICOS
                 </h1>
