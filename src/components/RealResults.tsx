@@ -2,16 +2,16 @@ import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
 
 // Imports de Imagens (Antes e Depois)
-import homemA from '../assets/resultados/homem-a.jpeg';
-import homemD from '../assets/resultados/homem-d.jpeg';
-import nova1A from '../assets/resultados/nova1-a.jpeg';
-import nova1D from '../assets/resultados/nova1-d.jpeg';
-import nova2A from '../assets/resultados/nova2-a.jpeg';
-import nova2D from '../assets/resultados/nova2-d.jpeg';
-import obesa1A from '../assets/resultados/obesa1-a.jpeg';
-import obesa1D from '../assets/resultados/obesa1-d.jpeg';
-import obesa2A from '../assets/resultados/obesa2-a.jpeg';
-import obesa2D from '../assets/resultados/obesa2-d.jpeg';
+import homemA from '../assets/resultados/homem-a.webp';
+import homemD from '../assets/resultados/homem-d.webp';
+import nova1A from '../assets/resultados/nova1-a.webp';
+import nova1D from '../assets/resultados/nova1-d.webp';
+import nova2A from '../assets/resultados/nova2-a.webp';
+import nova2D from '../assets/resultados/nova2-d.webp';
+import obesa1A from '../assets/resultados/obesa1-a.webp';
+import obesa1D from '../assets/resultados/obesa1-d.webp';
+import obesa2A from '../assets/resultados/obesa2-a.webp';
+import obesa2D from '../assets/resultados/obesa2-d.webp';
 
 const transformations = [
   { id: 1, before: homemA, after: homemD, label: "Transformação Corporal" },
