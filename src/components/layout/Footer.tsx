@@ -1,4 +1,4 @@
-import { MapPin, MessageCircle, Mail, Award } from 'lucide-react';
+import { MapPin, MessageCircle, Mail, Award, Instagram } from 'lucide-react';
 
 import logo from '../../assets/logo.webp';
 
@@ -43,23 +43,19 @@ export default function Footer({ id }: { id?: string }) {
                 </a>
               </li>
               <li>
-                <a href="#metodologia" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Metodologia
-                </a>
-              </li>
-              <li>
                 <a href="#resultados" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Resultados
                 </a>
               </li>
               <li>
-                <a href="#comoeutrabalho" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Como eu trabalho
+                <a href="#metodologia" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Metodologia
                 </a>
               </li>
+
               <li>
-                <a href="#ctafinal" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> CTA Final
+                <a href="#comoeutrabalho" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Como eu trabalho
                 </a>
               </li>
               <li>
@@ -67,6 +63,12 @@ export default function Footer({ id }: { id?: string }) {
                   <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Planos
                 </a>
               </li>
+              <li>
+                <a href="#ctafinal" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> CTA Final
+                </a>
+              </li>
+
             </ul>
           </div>
 
@@ -79,6 +81,13 @@ export default function Footer({ id }: { id?: string }) {
                 <div className="flex flex-col">
                   <span className="text-xs text-silver-mist uppercase tracking-wider font-semibold">WhatsApp</span>
                   <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas." target="_blank" rel="noopener noreferrer" className="text-pure-white hover:text-electric transition-colors mt-1 font-medium text-sm">(11) 91979-9090</a>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="p-2 rounded-lg bg-electric/10 text-electric"><Instagram size={20} /></div>
+                <div className="flex flex-col">
+                  <span className="text-xs text-silver-mist uppercase tracking-wider font-semibold">Instagram</span>
+                  <a href="https://instagram.com/dominicalepersonal" target="_blank" rel="noopener noreferrer" className="text-pure-white hover:text-electric transition-colors mt-1 font-medium text-sm">@dominicalepersonal</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
