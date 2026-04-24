@@ -33,18 +33,23 @@ export default function Footer({ id }: { id?: string }) {
                 </a>
               </li>
               <li>
+                <a href="#sobremim" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Sobre mim
+                </a>
+              </li>
+              <li>
+                <a href="#metodologia" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Metodologia
+                </a>
+              </li>
+              <li>
+                <a href="#resultados" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Resultados
+                </a>
+              </li>
+              <li>
                 <a href="#planos" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Planos
-                </a>
-              </li>
-              <li>
-                <a href="#metodo" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Método
-                </a>
-              </li>
-              <li>
-                <a href="#contato" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Contato
                 </a>
               </li>
             </ul>
@@ -58,21 +63,21 @@ export default function Footer({ id }: { id?: string }) {
                 <div className="p-2 rounded-lg bg-electric/10 text-electric"><MessageCircle size={20} /></div>
                 <div className="flex flex-col">
                   <span className="text-xs text-silver-mist uppercase tracking-wider font-semibold">WhatsApp</span>
-                  <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas." target="_blank" rel="noopener noreferrer" className="text-pure-white hover:text-electric transition-colors mt-1 font-medium text-sm">(11) 94490-7191</a>
+                  <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas." target="_blank" rel="noopener noreferrer" className="text-pure-white hover:text-electric transition-colors mt-1 font-medium text-sm">(11) 91979-9090</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="p-2 rounded-lg bg-electric/10 text-electric"><Mail size={20} /></div>
                 <div className="flex flex-col">
                   <span className="text-xs text-silver-mist uppercase tracking-wider font-semibold">E-mail</span>
-                  <a href="mailto:wandertrainingbr@gmail.com" className="text-pure-white hover:text-electric transition-colors mt-1 font-medium text-sm break-all">wandertrainingbr@gmail.com</a>
+                  <a href="mailto:dominicalepersonal@gmail.com" className="text-pure-white hover:text-electric transition-colors mt-1 font-medium text-sm break-all">dominicalepersonal@gmail.com</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="p-2 rounded-lg bg-electric/10 text-electric"><Award size={20} /></div>
                 <div className="flex flex-col">
                   <span className="text-xs text-silver-mist uppercase tracking-wider font-semibold">Certificação</span>
-                  <span className="text-pure-white mt-1 font-medium text-sm">CREF: 210771-G/SP</span>
+                  <span className="text-pure-white mt-1 font-medium text-sm">CREF: 196174-G/SP</span>
                 </div>
               </div>
             </div>
@@ -81,8 +86,8 @@ export default function Footer({ id }: { id?: string }) {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-platinum-light/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-silver-mist">
-          <p>© 2026 Wander-Training. Atibaia.</p>
-          <div className="flex gap-8">
+          <p>© 2026 Dominicale Personal. Atibaia. Todos os direitos reservados. Desenvolvido por <a href="https://instagram.com/ale.sep_" target="_blank" rel="noopener noreferrer" className="hover:text-electric transition-colors">@ale.sep_</a></p>
+          <div className="flex gap-4">
             <a href="#contrato" className="hover:text-electric transition-colors">Contrato</a>
             <a href="#avaliacao" className="hover:text-electric transition-colors">Avaliação</a>
           </div>
