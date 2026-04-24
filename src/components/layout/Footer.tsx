@@ -11,8 +11,11 @@ export default function Footer({ id }: { id?: string }) {
 
           {/* Column 1: Brand & Identity */}
           <div className="flex flex-col gap-4">
-            <a href="/" className="inline-flex group mb-2">
+            <a href="#home" className="inline-flex items-center gap-3 group mb-2">
               <img src={logo} alt="Lucas Dominicale" className="h-14 md:h-16 w-auto object-contain rounded-lg" />
+              <span className="hidden md:block text-pure-white font-bold tracking-tight text-xl group-hover:text-electric transition-colors">
+                  Dominicale <span className="text-electric group-hover:text-pure-white transition-colors duration-300">Personal</span>
+              </span>
             </a>
             <p className="text-silver-mist mt-4 max-w-xs leading-relaxed text-sm">
               Personal trainer especializado em hipertrofia e emagrecimento. Agressividade nos treinos, precisão nos resultados.
