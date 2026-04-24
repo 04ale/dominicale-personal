@@ -67,7 +67,7 @@ export default function Plans({ id }: { id?: string }) {
                 <li className="flex items-start gap-3 opacity-40"><X size={20} className="text-silver-mist shrink-0" /> <span className="text-sm text-silver-mist line-through">Acompanhamento diário no WhatsApp</span></li>
                 <li className="flex items-start gap-3 opacity-40"><X size={20} className="text-silver-mist shrink-0" /> <span className="text-sm text-silver-mist line-through">Avaliação física mensal completa</span></li>
               </ul>
-              <a href="https://wa.me/5511944907191?text=Ol%C3%A1%20Lucas%21%20Quero%20fechar%20o%20Plano%20Presencial%20B%C3%A1sico." target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg border border-platinum-light/20 text-pure-white h-12 font-bold hover:bg-gunmetal-grey hover:border-electric hover:text-electric transition-colors">
+              <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Quero%20fechar%20o%20Plano%20Presencial%20B%C3%A1sico." target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg border border-platinum-light/20 text-pure-white h-12 font-bold hover:bg-gunmetal-grey hover:border-electric hover:text-electric transition-colors">
                 Escolher Básico
               </a>
             </div>
@@ -89,7 +89,7 @@ export default function Plans({ id }: { id?: string }) {
                 <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-pure-white font-medium">Suporte diário no WhatsApp</span></li>
                 <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-pure-white font-medium">Avaliação física e postural mensal</span></li>
               </ul>
-              <a href="https://wa.me/5511944907191?text=Ol%C3%A1%20Lucas%21%20Quero%20fechar%20o%20Plano%20Presencial%20Performance%21" target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg bg-electric text-deep-onyx h-14 font-extrabold hover:bg-electric/90 hover:scale-105 transition-all shadow-[0_0_15px_rgba(0,240,255,0.3)]">
+              <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Quero%20fechar%20o%20Plano%20Presencial%20Performance%21" target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg bg-electric text-deep-onyx h-14 font-extrabold hover:bg-electric/90 hover:scale-105 transition-all shadow-[0_0_15px_rgba(0,240,255,0.3)]">
                 Quero o Performance
               </a>
             </div>
@@ -108,7 +108,7 @@ export default function Plans({ id }: { id?: string }) {
                 <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-silver-mist">Prioridade absoluta de agenda</span></li>
                 <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-silver-mist">Todos os benefícios anteriores</span></li>
               </ul>
-              <a href="https://wa.me/5511944907191?text=Ol%C3%A1%20Lucas%21%20Quero%20fechar%20o%20Plano%20Presencial%20Elite." target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg border border-platinum-light/20 text-pure-white h-12 font-bold hover:bg-gunmetal-grey hover:border-electric hover:text-electric transition-colors">
+              <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Quero%20fechar%20o%20Plano%20Presencial%20Elite." target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg border border-platinum-light/20 text-pure-white h-12 font-bold hover:bg-gunmetal-grey hover:border-electric hover:text-electric transition-colors">
                 Escolher Elite
               </a>
             </div>
@@ -133,7 +133,7 @@ export default function Plans({ id }: { id?: string }) {
                 <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-silver-mist">Suporte para dúvidas (App)</span></li>
                 <li className="flex items-start gap-3 opacity-40"><X size={20} className="text-silver-mist shrink-0" /> <span className="text-sm text-silver-mist line-through">Análise de vídeos da execução</span></li>
               </ul>
-              <a href="https://wa.me/5511944907191?text=Ol%C3%A1%20Lucas%21%20Quero%20assinar%20a%20Consultoria%20Bimestral." target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg border border-platinum-light/20 text-pure-white h-12 font-bold hover:bg-gunmetal-grey hover:border-electric hover:text-electric transition-colors">
+              <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Quero%20assinar%20a%20Consultoria%20Bimestral." target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg border border-platinum-light/20 text-pure-white h-12 font-bold hover:bg-gunmetal-grey hover:border-electric hover:text-electric transition-colors">
                 Assinar Bimestral
               </a>
             </div>
@@ -155,7 +155,7 @@ export default function Plans({ id }: { id?: string }) {
                 <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-pure-white font-medium">Análise de vídeos de execução</span></li>
                 <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-pure-white font-medium">Acesso total ao Aplicativo VIP</span></li>
               </ul>
-              <a href="https://wa.me/5511944907191?text=Ol%C3%A1%20Lucas%21%20Quero%20assinar%20a%20Consultoria%20Semestral%21" target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg bg-electric text-deep-onyx h-14 font-extrabold hover:bg-electric/90 hover:scale-105 transition-all shadow-[0_0_15px_rgba(0,240,255,0.3)]">
+              <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Quero%20assinar%20a%20Consultoria%20Semestral%21" target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg bg-electric text-deep-onyx h-14 font-extrabold hover:bg-electric/90 hover:scale-105 transition-all shadow-[0_0_15px_rgba(0,240,255,0.3)]">
                 Assinar Semestral
               </a>
             </div>
@@ -173,7 +173,7 @@ export default function Plans({ id }: { id?: string }) {
                 <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-silver-mist">1 Encontro por chamada de vídeo/mês</span></li>
                 <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-silver-mist">Planejamento do ano completo</span></li>
               </ul>
-              <a href="https://wa.me/5511944907191?text=Ol%C3%A1%20Lucas%21%20Quero%20assinar%20a%20Consultoria%20Anual." target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg border border-platinum-light/20 text-pure-white h-12 font-bold hover:bg-gunmetal-grey hover:border-electric hover:text-electric transition-colors">
+              <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Quero%20assinar%20a%20Consultoria%20Anual." target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg border border-platinum-light/20 text-pure-white h-12 font-bold hover:bg-gunmetal-grey hover:border-electric hover:text-electric transition-colors">
                 Assinar Anual
               </a>
             </div>

@@ -26,7 +26,7 @@ export default function Methods({ id }: { id?: string }) {
             </p>
 
             <a
-              href="https://wa.me/5511944907191?text=Ol%C3%A1%20Lucas%21%20Quero%20conhecer%20mais%20sobre%20o%20M%C3%A9todo%20Lucas%20Dominicale."
+              href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Quero%20conhecer%20mais%20sobre%20o%20M%C3%A9todo%20Lucas%20Dominicale."
               target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-md border-2 border-electric text-electric hover:bg-electric hover:text-deep-onyx text-lg h-14 px-8 transition-all duration-300 font-bold group"
             >

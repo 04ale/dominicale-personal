@@ -26,7 +26,7 @@ export default function FinalCTA({ id }: { id?: string }) {
           <div className="absolute -inset-1 bg-linear-to-r from-electric to-electric opacity-70 blur-lg group-hover:opacity-100 group-hover:blur-xl transition-all duration-500 animate-pulse"></div>
 
           <a
-            href="https://wa.me/5511944907191?text=Lucas%2C%20estou%20decidido%28a%29%21%20Quero%20mudar%20meu%20corpo%20agora%21"
+            href="https://wa.me/5511919799090?text=Lucas%2C%20estou%20decidido%28a%29%21%20Quero%20mudar%20meu%20corpo%20agora%21"
             target="_blank" rel="noopener noreferrer"
             className="relative flex items-center justify-center gap-3 bg-electric text-deep-onyx text-xl md:text-2xl font-black px-10 py-6 md:px-16 md:py-8 rounded-2xl transform group-hover:scale-105 transition-all duration-300 overflow-hidden"
           >
