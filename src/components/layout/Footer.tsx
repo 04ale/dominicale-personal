@@ -37,7 +37,7 @@ export default function Footer({ id }: { id?: string }) {
               </li>
               <li>
                 <a href="#sobremim" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Sobre mim
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Sobre Mim
                 </a>
               </li>
               <li>
