@@ -22,7 +22,7 @@ export default function Methods({ id }: { id?: string }) {
               </span>
             </h2>
             <p className="text-silver-mist text-lg mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              Esqueça as fichas de treino genéricas. O Método Lucas Dominicale foi desenhado para quem cansou de tentar e não ver resultados. Uma engenharia corporal focada no que o seu biotipo realmente precisa.
+              Esqueça as fichas de treino genéricas. O <strong>Método Lucas Dominicale</strong> foi desenhado para quem cansou de tentar e não ver <strong>resultados reais</strong>. Uma <strong>engenharia corporal</strong> focada no que o seu biotipo realmente precisa.
             </p>
 
             <a

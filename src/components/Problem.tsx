@@ -11,7 +11,7 @@ export default function Problem({ id }: { id?: string }) {
             💥 O Problema (Conexão)
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
-            Se você já...
+            Dificuldades no Treino e Dieta?
           </h2>
           <div className="w-20 h-1 bg-electric mx-auto rounded-full"></div>
         </div>
@@ -27,9 +27,9 @@ export default function Problem({ id }: { id?: string }) {
             <div className="w-16 h-16 rounded-full bg-deep-onyx border border-platinum-light/10 flex items-center justify-center mb-6 shadow-inner">
               <Dumbbell size={28} className="text-electric" />
             </div>
-            <h3 className="text-xl font-bold mb-3">Treinou e não teve resultado</h3>
+            <h3 className="text-xl font-bold mb-3">Estagnação na Academia</h3>
             <p className="text-silver-mist text-sm leading-relaxed">
-              Passa horas na academia, se esforça, mas não vê diferença real no espelho.
+              Passa horas na academia, se esforça, mas não vê <strong>hipertrofia</strong> ou diferença real no espelho.
             </p>
           </div>
 
@@ -38,9 +38,9 @@ export default function Problem({ id }: { id?: string }) {
             <div className="w-16 h-16 rounded-full bg-deep-onyx border border-platinum-light/10 flex items-center justify-center mb-6 shadow-inner">
               <Utensils size={28} className="text-electric" />
             </div>
-            <h3 className="text-xl font-bold mb-3">Seguiu dieta e não evoluiu</h3>
+            <h3 className="text-xl font-bold mb-3">Estagnação na Dieta</h3>
             <p className="text-silver-mist text-sm leading-relaxed">
-              Cortou tudo que gosta, passou fome, mas a balança e o corpo estagnaram.
+              Cortou tudo que gosta, passou fome, mas o <strong>emagrecimento</strong> e o corpo estagnaram.
             </p>
           </div>
 

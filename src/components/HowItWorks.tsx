@@ -3,26 +3,26 @@ import { UserPlus, ClipboardList, CalendarCheck, Settings } from 'lucide-react';
 const steps = [
     {
         number: "01",
-        title: "Você entra",
-        description: "Toma a decisão e entra para o time, preenchendo a avaliação inicial completa.",
+        title: "Início da Consultoria",
+        description: "Você toma a decisão e entra para o time, preenchendo uma <strong>avaliação física</strong> inicial completa.",
         icon: <UserPlus size={32} className="text-electric" />
     },
     {
         number: "02",
-        title: "Recebe seu plano",
-        description: "Desenvolvo seu treino 100% individualizado baseado no seu corpo e rotina.",
+        title: "Treino Personalizado",
+        description: "Desenvolvo seu <strong>plano de treino</strong> 100% individualizado baseado no seu corpo e rotina.",
         icon: <ClipboardList size={32} className="text-electric" />
     },
     {
         number: "03",
-        title: "Faz check-in semanal",
-        description: "Acompanhamento real para medir sua evolução e garantir que não haja estagnação.",
+        title: "Check-in Semanal",
+        description: "Acompanhamento real para medir sua <strong>evolução física</strong> e garantir que não haja estagnação.",
         icon: <CalendarCheck size={32} className="text-electric" />
     },
     {
         number: "04",
-        title: "Eu ajusto tudo pra você",
-        description: "Lapido os detalhes e ajusto o planejamento para você continuar tendo resultados.",
+        title: "Ajuste de Estratégia",
+        description: "Lapido os detalhes e ajusto o planejamento para você continuar tendo <strong>resultados de performance</strong>.",
         icon: <Settings size={32} className="text-electric" />
     }
 ];
