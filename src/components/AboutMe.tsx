@@ -1,4 +1,5 @@
 import { Target, Trophy, Dumbbell } from 'lucide-react';
+import profileImg from '../assets/eu.webp';
 
 export default function AboutMe({ id }: { id?: string }) {
   return (
@@ -16,23 +17,12 @@ export default function AboutMe({ id }: { id?: string }) {
             <div className="absolute inset-0 bg-electric/20 rounded-3xl translate-x-4 translate-y-4 border border-electric/30 transition-transform duration-500 group-hover:translate-x-6 group-hover:translate-y-6"></div>
 
             <div className="relative bg-deep-onyx border border-platinum-light/10 rounded-3xl overflow-hidden aspect-4/5 flex items-center justify-center shadow-2xl">
-              {/* Fallback image style while the user doesn't plug the real photo */}
-              <div className="text-center p-8">
-                <Dumbbell size={64} className="mx-auto text-silver-mist/30 mb-4" />
-                <p className="text-silver-mist text-sm uppercase tracking-widest font-bold">
-                  Sua Foto Aqui
-                </p>
-                <p className="text-xs text-silver-mist/50 mt-2">
-                  (Substitua pelo arquivo da sua foto no código)
-                </p>
-              </div>
-
-              {/* Quando tiver a foto real, basta remover a div acima e descomentar a tag img abaixo: */}
-              {/* <img 
-                src="/sua-foto.jpg" 
+              <img 
+                src={profileImg} 
                 alt="Lucas Dominicale" 
                 className="w-full h-full object-cover filter grayscale-[20%] group-hover:grayscale-0 transition-all duration-500"
-              /> */}
+                fetchPriority="high"
+              />
             </div>
 
             {/* Experience Badge */}
