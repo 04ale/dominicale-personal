@@ -31,18 +31,18 @@ export default function Footer({ id }: { id?: string }) {
             <h4 className="text-lg font-bold text-pure-white mb-6">Navegação</h4>
             <ul className="space-y-4">
               <li>
-                <a href="/" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Home
+                <a href="#home" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Início
                 </a>
               </li>
               <li>
                 <a href="#sobremim" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Sobre mim
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> O Treinador
                 </a>
               </li>
               <li>
                 <a href="#problemas" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Problema
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Desafios
                 </a>
               </li>
               <li>
@@ -52,23 +52,17 @@ export default function Footer({ id }: { id?: string }) {
               </li>
               <li>
                 <a href="#metodologia" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Metodologia
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> O Método
                 </a>
               </li>
-
               <li>
                 <a href="#comoeutrabalho" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Como eu trabalho
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Consultoria
                 </a>
               </li>
               <li>
                 <a href="#planos" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Planos
-                </a>
-              </li>
-              <li>
-                <a href="#ctafinal" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> CTA Final
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Investimento
                 </a>
               </li>
 

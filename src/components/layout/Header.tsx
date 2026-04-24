@@ -4,16 +4,13 @@ import { Menu, X } from 'lucide-react';
 import logo from '../../assets/logo.webp';
 
 const navItems = [
-    { id: 'home', label: 'Home', href: '#home' },
-    { id: 'sobremim', label: 'Sobre mim', href: '#sobremim' },
-    { id: 'problemas', label: 'Problema', href: '#problemas' },
+    { id: 'home', label: 'Início', href: '#home' },
+    { id: 'sobremim', label: 'O Treinador', href: '#sobremim' },
+    { id: 'problemas', label: 'Desafios', href: '#problemas' },
     { id: 'resultados', label: 'Resultados', href: '#resultados' },
-    { id: 'metodologia', label: 'Metodologia', href: '#metodologia' },
-
-    { id: 'comoeutrabalho', label: 'Como eu trabalho', href: '#comoeutrabalho' },
-    { id: 'planos', label: 'Planos', href: '#planos' },
-    { id: 'ctafinal', label: 'CTA Final', href: '#ctafinal' },
-
+    { id: 'metodologia', label: 'O Método', href: '#metodologia' },
+    { id: 'comoeutrabalho', label: 'Consultoria', href: '#comoeutrabalho' },
+    { id: 'planos', label: 'Investimento', href: '#planos' },
 ];
 
 export default function Header() {
