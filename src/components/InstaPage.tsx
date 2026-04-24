@@ -46,8 +46,22 @@ export default function InstaPage() {
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
+        // Update SEO Meta Tags
+        const prevTitle = document.title;
+        document.title = 'Links | Lucas Dominicale - Personal Trainer';
+        
+        const metaDesc = document.querySelector('meta[name="description"]');
+        const prevDesc = metaDesc?.getAttribute('content');
+        metaDesc?.setAttribute('content', 'Acesse meus links, consultoria online e parceiros exclusivos.');
+
         const t = setTimeout(() => setLoaded(true), 100);
-        return () => clearTimeout(t);
+        
+        return () => {
+            clearTimeout(t);
+            // Restore original SEO tags
+            document.title = prevTitle;
+            if (prevDesc) metaDesc?.setAttribute('content', prevDesc);
+        };
     }, []);
 
     return (

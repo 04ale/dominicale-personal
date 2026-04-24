@@ -9,6 +9,7 @@ import FinalCTA from './components/FinalCTA'
 import Preloader from './components/layout/Preloader'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
+import WhatsAppFloat from './components/layout/WhatsAppFloat'
 
 function Home() {
 
@@ -25,6 +26,7 @@ function Home() {
             <Plans id="planos" />
             <FinalCTA id="ctafinal" />
             <Footer />
+            <WhatsAppFloat />
         </>
     )
 }

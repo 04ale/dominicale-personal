@@ -9,37 +9,44 @@ export default function Preloader() {
     useEffect(() => {
         const imagesToPreload = [logo, hero];
         let loadedCount = 0;
+        let isFinishing = false;
+
+        const startFadeOut = () => {
+            if (isFinishing) return;
+            isFinishing = true;
+            
+            // Small extra delay for smoothness, but faster than before
+            setTimeout(() => {
+                setIsFading(true);
+                setTimeout(() => setIsVisible(false), 500);
+            }, 400);
+        };
 
         const handleImageLoad = () => {
             loadedCount++;
             if (loadedCount === imagesToPreload.length) {
-                // All critical images loaded, start fade out
                 startFadeOut();
             }
         };
 
+        // Preload critical assets
         imagesToPreload.forEach(src => {
             const img = new Image();
             img.src = src;
             img.onload = handleImageLoad;
-            img.onerror = handleImageLoad; // Continue even if one fails
+            img.onerror = handleImageLoad;
         });
 
-        // Fallback timer in case loading takes too long (e.g. 3s)
-        const fallback = setTimeout(() => {
-            startFadeOut();
-        }, 3000);
+        // Also listen for full window load
+        window.addEventListener('load', startFadeOut);
 
-        function startFadeOut() {
+        // Fallback timer (3s)
+        const fallback = setTimeout(startFadeOut, 3000);
+
+        return () => {
             clearTimeout(fallback);
-            // Small extra delay for smoothness
-            setTimeout(() => {
-                setIsFading(true);
-                setTimeout(() => setIsVisible(false), 500);
-            }, 800);
-        }
-
-        return () => clearTimeout(fallback);
+            window.removeEventListener('load', startFadeOut);
+        };
     }, []);
 
     if (!isVisible) return null;
