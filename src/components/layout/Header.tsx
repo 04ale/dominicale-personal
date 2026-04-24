@@ -35,8 +35,11 @@ export default function Header() {
             <div className="container mx-auto flex h-16 items-center justify-between px-4 max-w-7xl">
 
                 {/* Logo Section */}
-                <a href="#home" className="flex items-center group" onClick={() => { closeMenu(); setActiveSection('home'); }}>
+                <a href="#home" className="flex items-center gap-3 group" onClick={() => { closeMenu(); setActiveSection('home'); }}>
                     <img src={logo} alt="Lucas Dominicale" className="h-10 md:h-12 w-auto object-contain rounded-md" fetchPriority="high" />
+                    <span className="hidden md:block text-pure-white font-bold tracking-tight text-lg group-hover:text-electric transition-colors">
+                        Dominicale <span className="text-electric group-hover:text-pure-white transition-colors duration-300">Personal</span>
+                    </span>
                 </a>
 
                 {/* Navigation (Hidden on Mobile) */}
