@@ -14,7 +14,6 @@ export default function AboutMe({ id }: { id?: string }) {
           {/* Image/Photo Area */}
           <div className="lg:w-5/12 w-full relative group">
             {/* Frame offset */}
-            <div className="absolute inset-0 bg-electric/20 rounded-3xl translate-x-4 translate-y-4 border border-electric/30 transition-transform duration-500 group-hover:translate-x-6 group-hover:translate-y-6"></div>
 
             <div className="relative bg-deep-onyx border border-platinum-light/10 rounded-3xl overflow-hidden aspect-4/5 flex items-center justify-center shadow-2xl">
               <img
