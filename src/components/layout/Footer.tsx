@@ -38,6 +38,11 @@ export default function Footer({ id }: { id?: string }) {
                 </a>
               </li>
               <li>
+                <a href="#problemas" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Problema
+                </a>
+              </li>
+              <li>
                 <a href="#metodologia" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Metodologia
                 </a>
@@ -45,6 +50,16 @@ export default function Footer({ id }: { id?: string }) {
               <li>
                 <a href="#resultados" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Resultados
+                </a>
+              </li>
+              <li>
+                <a href="#comoeutrabalho" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Como eu trabalho
+                </a>
+              </li>
+              <li>
+                <a href="#ctafinal" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> CTA Final
                 </a>
               </li>
               <li>
