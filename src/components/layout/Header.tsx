@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 import logo from '../../assets/logo.webp';
@@ -7,11 +7,13 @@ const navItems = [
     { id: 'home', label: 'Home', href: '#home' },
     { id: 'sobremim', label: 'Sobre mim', href: '#sobremim' },
     { id: 'problemas', label: 'Problema', href: '#problemas' },
-    { id: 'metodologia', label: 'Metodologia', href: '#metodologia' },
     { id: 'resultados', label: 'Resultados', href: '#resultados' },
+    { id: 'metodologia', label: 'Metodologia', href: '#metodologia' },
+
     { id: 'comoeutrabalho', label: 'Como eu trabalho', href: '#comoeutrabalho' },
-    { id: 'ctafinal', label: 'CTA Final', href: '#ctafinal' },
     { id: 'planos', label: 'Planos', href: '#planos' },
+    { id: 'ctafinal', label: 'CTA Final', href: '#ctafinal' },
+
 ];
 
 export default function Header() {
@@ -26,24 +28,7 @@ export default function Header() {
         setIsMenuOpen(false);
     };
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY + 100;
 
-            for (const item of navItems) {
-                const element = document.getElementById(item.id);
-                if (element) {
-                    const { offsetTop, offsetHeight } = element;
-                    if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-                        setActiveSection(item.id);
-                    }
-                }
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
     return (
         <header className="sticky top-0 z-50 w-full border-b border-platinum-light/20 bg-deep-onyx/95 backdrop-blur supports-backdrop-filter:bg-deep-onyx/60">
