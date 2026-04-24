@@ -10,7 +10,7 @@ export default function HeroBanner({ id }: { id?: string }) {
                 <img
                     src={heroBannerImg}
                     alt="Personal Trainer Wander"
-                    className="w-full h-full object-cover object-center opacity-60"
+                    className="w-full h-full object-cover object-right md:object-center opacity-70 md:opacity-60"
                     fetchPriority="high"
                 />
                 {/* Gradient Overlay for better text readability */}
