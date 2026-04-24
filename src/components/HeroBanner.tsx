@@ -21,7 +21,7 @@ export default function HeroBanner({ id }: { id?: string }) {
             </div>
 
             {/* Content Container */}
-            <div className="container relative z-10 mx-auto px-6 flex flex-col items-start md:items-center justify-center text-left md:text-center pt-20 pb-32 max-w-5xl">
+            <div className="container relative z-10 mx-auto px-4 text-center flex flex-col items-center justify-center pt-20 pb-32 max-w-5xl">
 
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-platinum-light/20 bg-gunmetal-grey/50 backdrop-blur-md text-pure-white text-sm font-medium mb-8">
@@ -30,19 +30,19 @@ export default function HeroBanner({ id }: { id?: string }) {
                 </div>
 
                 {/* Main Heading */}
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-pure-white tracking-tight leading-[1.1] mb-8 drop-shadow-lg">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-pure-white tracking-tight leading-[1.1] mb-8 drop-shadow-lg px-2 sm:px-0">
                     TRANSFORME SEU CORPO  <br className="hidden md:block" />
                     COM UM <span className="text-electric">MÉTODO PERSONALIZADO</span> — SEM TREINOS GENÉRICOS
                 </h1>
 
                 {/* Description */}
-                <div className="text-lg md:text-xl text-silver-mist max-w-2xl md:mx-auto space-y-3 mb-12 font-medium drop-shadow-md">
+                <div className="text-lg md:text-xl text-silver-mist max-w-2xl mx-auto space-y-3 mb-12 font-medium drop-shadow-md">
                     <p>Consultoria online com acompanhamento real, </p>
                     <p>ajustes semanais e foco em resultado estético e performance </p>
                 </div>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row items-start md:items-center justify-start md:justify-center gap-4 w-full sm:w-auto">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
                     <a
                         href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Quero%20dar%20o%20primeiro%20passo%20para%20transformar%20meu%20corpo."
                         target="_blank" rel="noopener noreferrer"
