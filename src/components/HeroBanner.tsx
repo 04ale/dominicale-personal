@@ -9,7 +9,7 @@ export default function HeroBanner({ id }: { id?: string }) {
             <div className="absolute inset-0 z-0">
                 <img
                     src={heroBannerImg}
-                    alt="Personal Trainer Wander"
+                    alt="Lucas Dominicale - Personal Trainer em Atibaia"
                     className="w-full h-full object-cover object-[66%] md:object-center opacity-70 md:opacity-60"
                     fetchPriority="high"
                 />

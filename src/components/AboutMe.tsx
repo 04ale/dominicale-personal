@@ -18,7 +18,7 @@ export default function AboutMe({ id }: { id?: string }) {
             <div className="relative bg-deep-onyx border border-platinum-light/10 rounded-3xl overflow-hidden aspect-4/5 flex items-center justify-center shadow-2xl">
               <img
                 src={profileImg}
-                alt="Lucas Dominicale"
+                alt="Lucas Dominicale - Personal Trainer Especialista"
                 className="w-full h-full object-cover filter grayscale-20 group-hover:grayscale-0 transition-all duration-500"
                 fetchPriority="high"
               />

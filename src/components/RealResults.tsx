@@ -74,7 +74,7 @@ export default function RealResults({ id }: { id?: string }) {
                   <div className="w-full md:w-1/2 relative group">
                     <img
                       src={item.before}
-                      alt="Antes"
+                      alt={`Antes - ${item.label}`}
                       className="w-full h-[300px] md:h-[450px] object-cover rounded-xl filter grayscale-30% group-hover:grayscale-0 transition-all duration-500"
                     />
                     <div className="absolute top-4 left-4 bg-deep-onyx/80 backdrop-blur text-silver-mist px-4 py-1.5 rounded-md font-bold text-sm border border-platinum-light/20">
@@ -86,7 +86,7 @@ export default function RealResults({ id }: { id?: string }) {
                   <div className="w-full md:w-1/2 relative group">
                     <img
                       src={item.after}
-                      alt="Depois"
+                      alt={`Depois - ${item.label}`}
                       className="w-full h-[300px] md:h-[450px] object-cover rounded-xl shadow-[0_0_20px_rgba(0,240,255,0.15)] group-hover:shadow-[0_0_30px_rgba(0,240,255,0.3)] transition-all duration-500"
                     />
                     <div className="absolute top-4 right-4 bg-electric text-deep-onyx px-4 py-1.5 rounded-md font-bold text-sm shadow-md">
