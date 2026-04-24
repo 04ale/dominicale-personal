@@ -1,6 +1,6 @@
 import { Menu } from 'lucide-react';
 
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.webp';
 
 export default function Header() {
     return (
@@ -9,7 +9,7 @@ export default function Header() {
 
                 {/* Logo Section */}
                 <a href="/" className="flex items-center group">
-                    <img src={logo} alt="Lucas Dominicale" className="h-10 md:h-12 w-auto object-contain rounded-md" />
+                    <img src={logo} alt="Lucas Dominicale" className="h-10 md:h-12 w-auto object-contain rounded-md" fetchPriority="high" />
                 </a>
 
                 {/* Navigation (Hidden on Mobile) */}
@@ -29,7 +29,7 @@ export default function Header() {
 
                 {/* Right Buttons */}
                 <div className="flex items-center gap-3">
-                    <a href="https://wa.me/5511944907191?text=Ol%C3%A1%20Lucas%21%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas." className="inline-flex items-center justify-center bg-electric hover:bg-electric/90 text-deep-onyx h-9 px-4 py-2 rounded-md text-sm font-semibold shadow-sm transition-colors" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas." className="inline-flex items-center justify-center bg-electric hover:bg-electric/90 text-deep-onyx h-9 px-4 py-2 rounded-md text-sm font-semibold shadow-sm transition-colors" target="_blank" rel="noopener noreferrer">
                         WhatsApp
                     </a>
                     <button className="md:hidden flex items-center justify-center text-pure-white hover:bg-gunmetal-grey h-9 w-9 rounded-md transition-colors">

@@ -1,6 +1,6 @@
 import { MapPin, MessageCircle, Mail, Award } from 'lucide-react';
 
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.webp';
 
 export default function Footer({ id }: { id?: string }) {
   return (
@@ -58,7 +58,7 @@ export default function Footer({ id }: { id?: string }) {
                 <div className="p-2 rounded-lg bg-electric/10 text-electric"><MessageCircle size={20} /></div>
                 <div className="flex flex-col">
                   <span className="text-xs text-silver-mist uppercase tracking-wider font-semibold">WhatsApp</span>
-                  <a href="https://wa.me/5511944907191?text=Ol%C3%A1%20Lucas%21%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas." target="_blank" rel="noopener noreferrer" className="text-pure-white hover:text-electric transition-colors mt-1 font-medium text-sm">(11) 94490-7191</a>
+                  <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas." target="_blank" rel="noopener noreferrer" className="text-pure-white hover:text-electric transition-colors mt-1 font-medium text-sm">(11) 94490-7191</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">

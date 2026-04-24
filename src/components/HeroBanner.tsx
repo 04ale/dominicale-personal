@@ -1,5 +1,5 @@
 import { MapPin, ArrowRight } from 'lucide-react';
-import heroBannerImg from '../assets/heroBanner.png';
+import heroBannerImg from '../assets/heroBanner.webp';
 
 export default function HeroBanner({ id }: { id?: string }) {
     return (
@@ -11,6 +11,7 @@ export default function HeroBanner({ id }: { id?: string }) {
                     src={heroBannerImg}
                     alt="Personal Trainer Wander"
                     className="w-full h-full object-cover object-center opacity-60"
+                    fetchPriority="high"
                 />
                 {/* Gradient Overlay for better text readability */}
                 <div className="absolute inset-0 bg-linear-to-b from-deep-onyx/60 via-deep-onyx/40 to-deep-onyx"></div>
@@ -43,7 +44,7 @@ export default function HeroBanner({ id }: { id?: string }) {
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
                     <a
-                        href="https://wa.me/5511944907191?text=Ol%C3%A1%20Lucas%21%20Quero%20dar%20o%20primeiro%20passo%20para%20transformar%20meu%20corpo."
+                        href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Quero%20dar%20o%20primeiro%20passo%20para%20transformar%20meu%20corpo."
                         target="_blank" rel="noopener noreferrer"
                         className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-md bg-electric hover:bg-electric/90 text-deep-onyx text-lg h-14 px-10 shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all duration-300 font-bold hover:scale-105"
                     >
