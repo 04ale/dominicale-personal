@@ -5,12 +5,12 @@ import logo from '../../assets/logo.webp';
 
 const navItems = [
     { id: 'home', label: 'Início', href: '#home' },
-    { id: 'sobremim', label: 'O Treinador', href: '#sobremim' },
-    { id: 'problemas', label: 'Desafios', href: '#problemas' },
+    { id: 'sobremim', label: 'Sobre Mim', href: '#sobremim' },
+    { id: 'problemas', label: 'Dificuldades', href: '#problemas' },
     { id: 'resultados', label: 'Resultados', href: '#resultados' },
     { id: 'metodologia', label: 'O Método', href: '#metodologia' },
     { id: 'comoeutrabalho', label: 'Consultoria', href: '#comoeutrabalho' },
-    { id: 'planos', label: 'Investimento', href: '#planos' },
+    { id: 'planos', label: 'Planos', href: '#planos' },
 ];
 
 export default function Header() {

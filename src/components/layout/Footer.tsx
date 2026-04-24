@@ -14,7 +14,7 @@ export default function Footer({ id }: { id?: string }) {
             <a href="#home" className="inline-flex items-center gap-3 group mb-2">
               <img src={logo} alt="Lucas Dominicale" className="h-14 md:h-16 w-auto object-contain rounded-lg" />
               <span className="hidden md:block text-pure-white font-bold tracking-tight text-xl group-hover:text-electric transition-colors">
-                  Dominicale <span className="text-electric group-hover:text-pure-white transition-colors duration-300">Personal</span>
+                Dominicale <span className="text-electric group-hover:text-pure-white transition-colors duration-300">Personal</span>
               </span>
             </a>
             <p className="text-silver-mist mt-4 max-w-xs leading-relaxed text-sm">
@@ -37,12 +37,12 @@ export default function Footer({ id }: { id?: string }) {
               </li>
               <li>
                 <a href="#sobremim" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> O Treinador
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Sobre mim
                 </a>
               </li>
               <li>
                 <a href="#problemas" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Desafios
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Dificuldades
                 </a>
               </li>
               <li>
@@ -62,7 +62,7 @@ export default function Footer({ id }: { id?: string }) {
               </li>
               <li>
                 <a href="#planos" className="text-silver-mist hover:text-electric transition-colors duration-200 font-medium text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Investimento
+                  <span className="w-1.5 h-1.5 rounded-full bg-electric/40" /> Planos
                 </a>
               </li>
 
