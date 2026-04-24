@@ -27,7 +27,7 @@ export default function Footer({ id }: { id?: string }) {
           </div>
 
           {/* Column 2: Navigation */}
-          <div>
+          <nav aria-label="Navegação do rodapé">
             <h4 className="text-lg font-bold text-pure-white mb-6">Navegação</h4>
             <ul className="space-y-4">
               <li>
@@ -73,7 +73,7 @@ export default function Footer({ id }: { id?: string }) {
               </li>
 
             </ul>
-          </div>
+          </nav>
 
           {/* Column 3: Contact Info */}
           <div>

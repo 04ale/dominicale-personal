@@ -129,12 +129,14 @@ export default function RealResults({ id }: { id?: string }) {
             <div className="flex items-center gap-3">
               <button
                 onClick={handlePrev}
+                aria-label="Slide anterior"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-deep-onyx border border-platinum-light/20 hover:bg-gunmetal-grey hover:text-electric hover:border-electric/50 transition-colors duration-300"
               >
                 <ChevronLeft size={20} />
               </button>
               <button
                 onClick={handleNext}
+                aria-label="Próximo slide"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-deep-onyx border border-platinum-light/20 hover:bg-gunmetal-grey hover:text-electric hover:border-electric/50 transition-colors duration-300"
               >
                 <ChevronRight size={20} />

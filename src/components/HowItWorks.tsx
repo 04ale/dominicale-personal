@@ -4,25 +4,25 @@ const steps = [
     {
         number: "01",
         title: "Início da Consultoria",
-        description: "Você toma a decisão e entra para o time, preenchendo uma <strong>avaliação física</strong> inicial completa.",
+        description: <>Você toma a decisão e entra para o time, preenchendo uma <strong>avaliação física</strong> inicial completa.</>,
         icon: <UserPlus size={32} className="text-electric" />
     },
     {
         number: "02",
         title: "Treino Personalizado",
-        description: "Desenvolvo seu <strong>plano de treino</strong> 100% individualizado baseado no seu corpo e rotina.",
+        description: <>Desenvolvo seu <strong>plano de treino</strong> 100% individualizado baseado no seu corpo e rotina.</>,
         icon: <ClipboardList size={32} className="text-electric" />
     },
     {
         number: "03",
         title: "Check-in Semanal",
-        description: "Acompanhamento real para medir sua <strong>evolução física</strong> e garantir que não haja estagnação.",
+        description: <>Acompanhamento real para medir sua <strong>evolução física</strong> e garantir que não haja estagnação.</>,
         icon: <CalendarCheck size={32} className="text-electric" />
     },
     {
         number: "04",
         title: "Ajuste de Estratégia",
-        description: "Lapido os detalhes e ajusto o planejamento para você continuar tendo <strong>resultados de performance</strong>.",
+        description: <>Lapido os detalhes e ajusto o planejamento para você continuar tendo <strong>resultados de performance</strong>.</>,
         icon: <Settings size={32} className="text-electric" />
     }
 ];
