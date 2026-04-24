@@ -1,4 +1,4 @@
-import { Target, Trophy, Dumbbell } from 'lucide-react';
+import { Target, Trophy } from 'lucide-react';
 import profileImg from '../assets/eu.webp';
 
 export default function AboutMe({ id }: { id?: string }) {
@@ -17,10 +17,10 @@ export default function AboutMe({ id }: { id?: string }) {
             <div className="absolute inset-0 bg-electric/20 rounded-3xl translate-x-4 translate-y-4 border border-electric/30 transition-transform duration-500 group-hover:translate-x-6 group-hover:translate-y-6"></div>
 
             <div className="relative bg-deep-onyx border border-platinum-light/10 rounded-3xl overflow-hidden aspect-4/5 flex items-center justify-center shadow-2xl">
-              <img 
-                src={profileImg} 
-                alt="Lucas Dominicale" 
-                className="w-full h-full object-cover filter grayscale-[20%] group-hover:grayscale-0 transition-all duration-500"
+              <img
+                src={profileImg}
+                alt="Lucas Dominicale"
+                className="w-full h-full object-cover filter grayscale-20 group-hover:grayscale-0 transition-all duration-500"
                 fetchPriority="high"
               />
             </div>
@@ -43,7 +43,7 @@ export default function AboutMe({ id }: { id?: string }) {
               Sobre o Treinador
             </span>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 tracking-tight break-words">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 tracking-tight wrap-break-word">
               Prazer, sou <span className="text-transparent bg-clip-text bg-linear-to-r from-electric to-pure-white">Lucas Dominicale.</span>
             </h2>
             <h3 className="text-xl md:text-2xl text-silver-mist font-medium mb-8 border-l-4 border-electric pl-4">
