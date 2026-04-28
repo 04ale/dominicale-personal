@@ -3,25 +3,25 @@ import heroBannerImg from '../assets/heroBanner.webp';
 
 export default function HeroBanner({ id }: { id?: string }) {
     return (
-        <section id={id} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-deep-onyx pt-16">
+        <section id={id} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-16">
 
             {/* Background Image with Overlay */}
-            <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 z-0 flex items-center justify-center bg-black">
                 <img
                     src={heroBannerImg}
                     alt="Lucas Dominicale - Personal Trainer em Atibaia"
-                    className="w-full h-full object-cover object-[66%] md:object-center opacity-70 md:opacity-60"
+                    className="w-full h-full object-contain md:object-cover object-center opacity-70 md:opacity-60 scale-[1.8] sm:scale-150 md:scale-100 transition-transform"
                     fetchPriority="high"
                 />
                 {/* Gradient Overlay for better text readability */}
-                <div className="absolute inset-0 bg-linear-to-b from-deep-onyx/60 via-deep-onyx/40 to-deep-onyx"></div>
+                <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-deep-onyx"></div>
 
                 {/* Subtle electric glow effect */}
                 <div className="absolute inset-0 bg-electric/5 mix-blend-overlay"></div>
             </div>
 
             {/* Content Container */}
-            <div className="container relative z-10 mx-auto px-4 text-center flex flex-col items-center justify-center pt-20 pb-32 max-w-5xl">
+            <div className="container relative z-10 mx-auto px-4 text-center flex flex-col items-center justify-center pt-20 pb-32 max-w-5xl -mt-24 md:-mt-32">
 
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-platinum-light/20 bg-gunmetal-grey/50 backdrop-blur-md text-pure-white text-sm font-medium mb-8">

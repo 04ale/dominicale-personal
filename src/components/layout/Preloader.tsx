@@ -14,7 +14,7 @@ export default function Preloader() {
         const startFadeOut = () => {
             if (isFinishing) return;
             isFinishing = true;
-            
+
             // Small extra delay for smoothness, but faster than before
             setTimeout(() => {
                 setIsFading(true);

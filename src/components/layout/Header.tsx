@@ -34,13 +34,13 @@ export default function Header() {
                 {/* Logo Section */}
                 <a href="#home" className="flex items-center gap-3 group" onClick={() => { closeMenu(); setActiveSection('home'); }}>
                     <img src={logo} alt="Lucas Dominicale" className="h-10 md:h-12 w-auto object-contain rounded-md" fetchPriority="high" />
-                    <span className="hidden md:block text-pure-white font-bold tracking-tight text-lg group-hover:text-electric transition-colors">
+                    <span className="hidden lg:block text-pure-white font-bold tracking-tight text-lg group-hover:text-electric transition-colors">
                         Dominicale <span className="text-electric group-hover:text-pure-white transition-colors duration-300">Personal</span>
                     </span>
                 </a>
 
                 {/* Navigation (Hidden on Mobile) */}
-                <nav className="hidden md:flex items-center gap-6">
+                <nav className="hidden lg:flex items-center gap-6">
                     {navItems.map((item) => (
                         <a
                             key={item.id}
@@ -64,7 +64,7 @@ export default function Header() {
                     </a>
                     <button
                         onClick={toggleMenu}
-                        className="md:hidden flex items-center justify-center text-pure-white hover:bg-gunmetal-grey h-9 w-9 rounded-md transition-colors"
+                        className="lg:hidden flex items-center justify-center text-pure-white hover:bg-gunmetal-grey h-9 w-9 rounded-md transition-colors"
                         aria-label="Menu"
                         aria-expanded={isMenuOpen}
                     >
@@ -75,7 +75,7 @@ export default function Header() {
 
             {/* Mobile Menu Overlay */}
             {isMenuOpen && (
-                <div className="md:hidden absolute top-16 left-0 w-full bg-deep-onyx border-b border-platinum-light/20 shadow-xl overflow-hidden animate-in slide-in-from-top-2 duration-200">
+                <div className="lg:hidden absolute top-16 left-0 w-full bg-deep-onyx border-b border-platinum-light/20 shadow-xl overflow-hidden animate-in slide-in-from-top-2 duration-200">
                     <nav className="flex flex-col p-4">
                         {navItems.map((item) => (
                             <a
