@@ -18,9 +18,21 @@ interface PartnerLink {
 const partners: PartnerLink[] = [
     {
         label: 'Nutricionista',
+        handle: '@nutrinicolerangel',
+        url: 'https://www.instagram.com/nutrinicolerangel',
+        emoji: '🥗',
+    },
+    {
+        label: 'Nutricionista',
         handle: '@nutri.leonardogregorini',
         url: 'https://www.instagram.com/nutri.leonardogregorini',
         emoji: '🍽️',
+    },
+    {
+        label: 'Suplementos',
+        handle: '@nutre_suplementos',
+        url: 'https://www.instagram.com/nutre_suplementos',
+        emoji: '🧪',
     },
     {
         label: 'Suplementos',
@@ -28,19 +40,8 @@ const partners: PartnerLink[] = [
         url: 'https://www.instagram.com/goldskull.suplementos',
         emoji: '💪',
     },
-    {
-        label: 'Nutricionista',
-        handle: '@nutrinicolerangel',
-        url: 'https://www.instagram.com/nutrinicolerangel',
-        emoji: '🥗',
-    },
-    {
-        label: 'Suplementos',
-        handle: '@biospherasup',
-        url: 'https://www.instagram.com/biospherasup',
-        emoji: '🧪',
-    },
 ];
+
 
 export default function InstaPage() {
     const [loaded, setLoaded] = useState(false);
@@ -49,13 +50,13 @@ export default function InstaPage() {
         // Update SEO Meta Tags
         const prevTitle = document.title;
         document.title = 'Links | Lucas Dominicale - Personal Trainer';
-        
+
         const metaDesc = document.querySelector('meta[name="description"]');
         const prevDesc = metaDesc?.getAttribute('content');
         metaDesc?.setAttribute('content', 'Acesse meus links, consultoria online e parceiros exclusivos.');
 
         const t = setTimeout(() => setLoaded(true), 100);
-        
+
         return () => {
             clearTimeout(t);
             // Restore original SEO tags
