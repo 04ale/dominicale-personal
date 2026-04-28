@@ -19,6 +19,7 @@ export default function Problem({ id }: { id?: string }) {
         {/* Pain Points Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20 relative">
 
+
           {/* Subtle background glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-electric/10 blur-[100px] rounded-full pointer-events-none"></div>
 
