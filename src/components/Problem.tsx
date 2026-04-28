@@ -8,7 +8,7 @@ export default function Problem({ id }: { id?: string }) {
         {/* Section Heading */}
         <div className="text-center mb-16">
           <span className="inline-block py-1 px-3 rounded-full bg-electric/10 text-electric font-bold tracking-wider text-xs uppercase mb-6 border border-electric/20">
-            💥 O Problema (Conexão)
+            💥 O Problema
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
             Dificuldades no Treino e Dieta?
@@ -29,7 +29,7 @@ export default function Problem({ id }: { id?: string }) {
             </div>
             <h3 className="text-xl font-bold mb-3">Estagnação na Academia</h3>
             <p className="text-silver-mist text-sm leading-relaxed">
-              Passa horas na academia, se esforça, mas não vê <strong>hipertrofia</strong> ou diferença real no espelho.
+              Treinar muito não é o mesmo que treinar certo. Sem progressão e direcionamento, o resultado simplesmente <strong>não vem</strong>.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ export default function Problem({ id }: { id?: string }) {
             </div>
             <h3 className="text-xl font-bold mb-3">Estagnação na Dieta</h3>
             <p className="text-silver-mist text-sm leading-relaxed">
-              Cortou tudo que gosta, passou fome, mas o <strong>emagrecimento</strong> e o corpo estagnaram.
+              Você até tenta comer “certo”, mas <strong>sem estratégia</strong>, consistência e ajuste fino… o corpo para de responder
             </p>
           </div>
 
