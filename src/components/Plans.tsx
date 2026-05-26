@@ -162,16 +162,11 @@ export default function Plans({ id }: { id?: string }) {
             <div className="bg-gunmetal-grey/50 border border-platinum-light/10 rounded-3xl p-8 flex flex-col h-full relative">
               <h3 className="text-xl font-bold mb-2 uppercase tracking-tighter">Plano Start</h3>
               <p className="text-silver-mist text-sm mb-6 h-10">O começo ideal para testar a metodologia.</p>
-              <div className="mb-8">
-                <span className="text-4xl font-extrabold text-pure-white">R$ 297</span>
-                <span className="text-silver-mist">/2 meses</span>
-                <p className="text-xs text-silver-mist mt-2 font-medium">Pagamento único via PIX</p>
+              <div className="mb-8 flex items-baseline gap-1">
+                <span className="text-4xl font-extrabold text-pure-white">R$ 350,00</span>
+                <span className="text-silver-mist text-sm whitespace-nowrap">/mensal</span>
               </div>
-              <ul className="space-y-4 mb-8 flex-1">
-                <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-silver-mist">Treino personalizado</span></li>
-                <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-silver-mist">Ajustes básicos</span></li>
-                <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-silver-mist">Suporte padrão</span></li>
-              </ul>
+              <div className="flex-1 mb-8" />
               <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Quero%20assinar%20o%20Plano%20Start%20da%20Consultoria." target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg border border-platinum-light/20 text-pure-white h-12 font-bold hover:bg-gunmetal-grey hover:border-electric hover:text-electric transition-colors">
                 Assinar Start
               </a>
@@ -184,16 +179,11 @@ export default function Plans({ id }: { id?: string }) {
               </div>
               <h3 className="text-2xl font-bold mb-2 text-pure-white uppercase tracking-tighter">Plano Pro</h3>
               <p className="text-electric text-sm mb-6 h-10 font-medium">Tempo suficiente para ver seu corpo mudar de verdade.</p>
-              <div className="mb-8">
-                <span className="text-5xl font-extrabold text-pure-white">R$ 640</span>
-                <span className="text-silver-mist">/6 meses</span>
-                <p className="text-xs text-electric mt-2 font-bold uppercase tracking-tight">PIX ou até 2x no cartão</p>
+              <div className="mb-8 flex items-baseline gap-1">
+                <span className="text-4xl font-extrabold text-pure-white">R$ 700,00</span>
+                <span className="text-silver-mist text-sm whitespace-nowrap">/3 meses</span>
               </div>
-              <ul className="space-y-4 mb-8 flex-1">
-                <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-pure-white font-medium">2 aulas presenciais (GymPass)</span></li>
-                <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-pure-white font-medium">Ajustes mais frequentes</span></li>
-                <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-pure-white font-medium">Acompanhamento mais próximo</span></li>
-              </ul>
+              <div className="flex-1 mb-8" />
               <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Quero%20assinar%20o%20Plano%20Pro%20da%20Consultoria%21" target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg bg-electric text-deep-onyx h-14 font-extrabold hover:bg-electric/90 hover:scale-105 transition-all shadow-[0_0_15px_rgba(0,240,255,0.3)]">
                 Assinar Pro
               </a>
@@ -203,24 +193,11 @@ export default function Plans({ id }: { id?: string }) {
             <div className="bg-gunmetal-grey/50 border border-platinum-light/10 rounded-3xl p-8 flex flex-col h-full relative">
               <h3 className="text-xl font-bold mb-2 uppercase tracking-tighter">Plano Elite 💰</h3>
               <p className="text-silver-mist text-sm mb-6 h-10">Comprometimento de longo prazo para uma vida nova.</p>
-              <div className="mb-8">
-                <div className="flex flex-col gap-1">
-                  <div>
-                    <span className="text-4xl font-extrabold text-pure-white">R$ 1.097</span>
-                    <span className="text-xs text-electric ml-2 font-bold uppercase">À Vista</span>
-                  </div>
-                  <div className="text-sm text-silver-mist">
-                    Ou R$ 1.125 (até 5x no cartão)
-                  </div>
-                </div>
-                <p className="text-[10px] text-silver-mist mt-2 uppercase tracking-widest opacity-60">PIX ou Crédito</p>
+              <div className="mb-8 flex items-baseline gap-1">
+                <span className="text-4xl font-extrabold text-pure-white">R$ 1.400,00</span>
+                <span className="text-silver-mist text-sm whitespace-nowrap">/6 meses</span>
               </div>
-              <ul className="space-y-4 mb-8 flex-1">
-                <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-silver-mist">4 aulas presenciais (Gympass)</span></li>
-                <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-silver-mist">Prioridade nas conversas e correções</span></li>
-                <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-silver-mist">Acompanhamento diário</span></li>
-                <li className="flex items-start gap-3"><Check size={20} className="text-electric shrink-0" /> <span className="text-sm text-silver-mist">Planejamento do ano completo</span></li>
-              </ul>
+              <div className="flex-1 mb-8" />
               <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Quero%20assinar%20o%20Plano%20Elite%20da%20Consultoria." target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg border border-platinum-light/20 text-pure-white h-12 font-bold hover:bg-gunmetal-grey hover:border-electric hover:text-electric transition-colors">
                 Assinar Elite
               </a>
