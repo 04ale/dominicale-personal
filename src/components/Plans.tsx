@@ -3,8 +3,23 @@ import { Check, X } from 'lucide-react';
 
 type PlanType = 'presencial' | 'consultoria';
 
-export default function Plans({ id }: { id?: string }) {
-  const [activeTab, setActiveTab] = useState<PlanType>('presencial');
+interface PlansProps {
+  id?: string;
+  activeTab?: PlanType;
+  setActiveTab?: (tab: PlanType) => void;
+}
+
+export default function Plans({ id, activeTab: controlledActiveTab, setActiveTab: controlledSetActiveTab }: PlansProps) {
+  const [localActiveTab, setLocalActiveTab] = useState<PlanType>('presencial');
+
+  const activeTab = controlledActiveTab !== undefined ? controlledActiveTab : localActiveTab;
+  const setActiveTab = (tab: PlanType) => {
+    if (controlledSetActiveTab) {
+      controlledSetActiveTab(tab);
+    } else {
+      setLocalActiveTab(tab);
+    }
+  };
 
   return (
     <section id={id} className="py-24 bg-deep-onyx text-pure-white relative">
