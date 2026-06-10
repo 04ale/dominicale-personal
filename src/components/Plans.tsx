@@ -1,32 +1,17 @@
-import { useState } from 'react';
 import { Check, X } from 'lucide-react';
-
-type PlanType = 'presencial' | 'consultoria';
 
 interface PlansProps {
   id?: string;
-  activeTab?: PlanType;
-  setActiveTab?: (tab: PlanType) => void;
 }
 
-export default function Plans({ id, activeTab: controlledActiveTab, setActiveTab: controlledSetActiveTab }: PlansProps) {
-  const [localActiveTab, setLocalActiveTab] = useState<PlanType>('presencial');
-
-  const activeTab = controlledActiveTab !== undefined ? controlledActiveTab : localActiveTab;
-  const setActiveTab = (tab: PlanType) => {
-    if (controlledSetActiveTab) {
-      controlledSetActiveTab(tab);
-    } else {
-      setLocalActiveTab(tab);
-    }
-  };
+export default function Plans({ id }: PlansProps) {
 
   return (
     <section id={id} className="py-24 bg-deep-onyx text-pure-white relative">
       <div className="container mx-auto px-4 max-w-6xl">
 
         {/* Section Heading */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <span className="inline-block py-1 px-3 rounded-full bg-electric/10 text-electric font-bold tracking-wider text-xs uppercase mb-6 border border-electric/20">
             💰 Investimento
           </span>
@@ -38,34 +23,7 @@ export default function Plans({ id, activeTab: controlledActiveTab, setActiveTab
           </p>
         </div>
 
-        {/* Toggle Switch */}
-        <div className="flex justify-center mb-16">
-          <div className="bg-gunmetal-grey/80 p-1.5 rounded-full border border-platinum-light/10 inline-flex relative backdrop-blur-sm">
-            <button
-              onClick={() => setActiveTab('presencial')}
-              className={`relative z-10 px-8 py-3 rounded-full text-sm font-bold transition-all duration-300 ${activeTab === 'presencial' ? 'text-deep-onyx' : 'text-silver-mist hover:text-pure-white'
-                }`}
-            >
-              Treino Presencial
-            </button>
-            <button
-              onClick={() => setActiveTab('consultoria')}
-              className={`relative z-10 px-8 py-3 rounded-full text-sm font-bold transition-all duration-300 ${activeTab === 'consultoria' ? 'text-deep-onyx' : 'text-silver-mist hover:text-pure-white'
-                }`}
-            >
-              Consultoria Online
-            </button>
-
-            {/* Sliding Pill Background */}
-            <div
-              className={`absolute top-1.5 bottom-1.5 w-[calc(50%-0.375rem)] bg-electric rounded-full transition-transform duration-300 ease-out shadow-[0_0_15px_rgba(0,240,255,0.4)] ${activeTab === 'consultoria' ? 'translate-x-full' : 'translate-x-0'
-                }`}
-            ></div>
-          </div>
-        </div>
-
         {/* Pricing Cards - Presencial */}
-        {activeTab === 'presencial' && (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center animate-in fade-in slide-in-from-bottom-4 duration-500">
 
             {/* PLANO ESSENCIAL (Ancoragem) */}
@@ -167,59 +125,6 @@ export default function Plans({ id, activeTab: controlledActiveTab, setActiveTab
             </div>
 
           </div>
-        )}
-
-        {/* Pricing Cards - Consultoria */}
-        {activeTab === 'consultoria' && (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center animate-in fade-in slide-in-from-bottom-4 duration-500">
-
-            {/* PLANO START */}
-            <div className="bg-gunmetal-grey/50 border border-platinum-light/10 rounded-3xl p-8 flex flex-col h-full relative">
-              <h3 className="text-xl font-bold mb-2 uppercase tracking-tighter">Plano Start</h3>
-              <p className="text-silver-mist text-sm mb-6 h-10">O começo ideal para testar a metodologia.</p>
-              <div className="mb-8 flex items-baseline gap-1">
-                <span className="text-4xl font-extrabold text-pure-white">R$ 350,00</span>
-                <span className="text-silver-mist text-sm whitespace-nowrap">/mensal</span>
-              </div>
-              <div className="flex-1 mb-8" />
-              <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Quero%20assinar%20o%20Plano%20Start%20da%20Consultoria." target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg border border-platinum-light/20 text-pure-white h-12 font-bold hover:bg-gunmetal-grey hover:border-electric hover:text-electric transition-colors">
-                Assinar Start
-              </a>
-            </div>
-
-            {/* PLANO PRO (O QUE VOCÊ VAI EMPURRAR) */}
-            <div className="bg-linear-to-b from-gunmetal-grey to-deep-onyx border-2 border-electric rounded-3xl p-8 flex flex-col h-full relative md:scale-105 shadow-[0_0_30px_rgba(0,240,255,0.15)] z-10">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-electric text-deep-onyx px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-[0_0_15px_rgba(0,240,255,0.5)]">
-                Mais Popular
-              </div>
-              <h3 className="text-2xl font-bold mb-2 text-pure-white uppercase tracking-tighter">Plano Pro</h3>
-              <p className="text-electric text-sm mb-6 h-10 font-medium">Tempo suficiente para ver seu corpo mudar de verdade.</p>
-              <div className="mb-8 flex items-baseline gap-1">
-                <span className="text-4xl font-extrabold text-pure-white">R$ 700,00</span>
-                <span className="text-silver-mist text-sm whitespace-nowrap">/3 meses</span>
-              </div>
-              <div className="flex-1 mb-8" />
-              <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Quero%20assinar%20o%20Plano%20Pro%20da%20Consultoria%21" target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg bg-electric text-deep-onyx h-14 font-extrabold hover:bg-electric/90 hover:scale-105 transition-all shadow-[0_0_15px_rgba(0,240,255,0.3)]">
-                Assinar Pro
-              </a>
-            </div>
-
-            {/* PLANO ELITE (PREMIUM / LUCRO ALTO) */}
-            <div className="bg-gunmetal-grey/50 border border-platinum-light/10 rounded-3xl p-8 flex flex-col h-full relative">
-              <h3 className="text-xl font-bold mb-2 uppercase tracking-tighter">Plano Elite 💰</h3>
-              <p className="text-silver-mist text-sm mb-6 h-10">Comprometimento de longo prazo para uma vida nova.</p>
-              <div className="mb-8 flex items-baseline gap-1">
-                <span className="text-4xl font-extrabold text-pure-white">R$ 1.400,00</span>
-                <span className="text-silver-mist text-sm whitespace-nowrap">/6 meses</span>
-              </div>
-              <div className="flex-1 mb-8" />
-              <a href="https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Quero%20assinar%20o%20Plano%20Elite%20da%20Consultoria." target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center rounded-lg border border-platinum-light/20 text-pure-white h-12 font-bold hover:bg-gunmetal-grey hover:border-electric hover:text-electric transition-colors">
-                Assinar Elite
-              </a>
-            </div>
-
-          </div>
-        )}
 
       </div>
     </section>

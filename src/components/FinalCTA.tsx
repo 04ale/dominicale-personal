@@ -17,7 +17,7 @@ export default function FinalCTA({ id }: { id?: string }) {
         </h2>
 
         <p className="text-xl md:text-2xl text-silver-mist mb-12 font-medium max-w-2xl mx-auto">
-          As vagas para a consultoria VIP e para os horários presenciais são <strong className="text-electric">estritamente limitadas</strong>. Se você adiar agora, sua vaga pode ir para alguém que já tomou a decisão de mudar.
+          As vagas para os horários presenciais são <strong className="text-electric">estritamente limitadas</strong>. Se você adiar agora, sua vaga pode ir para alguém que já tomou a decisão de mudar.
         </p>
 
         {/* Huge Absurd CTA Button */}

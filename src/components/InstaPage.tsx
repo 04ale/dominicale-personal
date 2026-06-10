@@ -4,7 +4,7 @@ import logoImg from '../assets/logo.webp';
 import profileImg from '../assets/eu.webp';
 
 const WHATSAPP_LINK =
-    'https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Vim%20pelo%20seu%20Instagram%20e%20quero%20saber%20mais%20sobre%20a%20consultoria.';
+    'https://wa.me/5511919799090?text=Ol%C3%A1%20Lucas%21%20Vim%20pelo%20seu%20Instagram%20e%20quero%20saber%20mais%20sobre%20o%20treino%20presencial.';
 
 const SITE_LINK = '/';
 
@@ -53,7 +53,7 @@ export default function InstaPage() {
 
         const metaDesc = document.querySelector('meta[name="description"]');
         const prevDesc = metaDesc?.getAttribute('content');
-        metaDesc?.setAttribute('content', 'Acesse meus links, consultoria online e parceiros exclusivos.');
+        metaDesc?.setAttribute('content', 'Acesse meus links, redes sociais e parceiros exclusivos.');
 
         const t = setTimeout(() => setLoaded(true), 100);
 

@@ -9,16 +9,11 @@ const navItems = [
     { id: 'problemas', label: 'Dificuldades', href: '#problemas' },
     { id: 'resultados', label: 'Resultados', href: '#resultados' },
     { id: 'metodologia', label: 'O Método', href: '#metodologia' },
-    { id: 'comoeutrabalho', label: 'Consultoria', href: '#planos' },
+    { id: 'comoeutrabalho', label: 'Como Funciona', href: '#comoeutrabalho' },
     { id: 'planos', label: 'Planos', href: '#planos' },
 ];
 
-interface HeaderProps {
-    onSelectConsultoria?: () => void;
-    onSelectPlanos?: () => void;
-}
-
-export default function Header({ onSelectConsultoria, onSelectPlanos }: HeaderProps) {
+export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('home');
 
@@ -52,11 +47,6 @@ export default function Header({ onSelectConsultoria, onSelectPlanos }: HeaderPr
                             href={item.href}
                             onClick={() => {
                                 setActiveSection(item.id);
-                                if (item.id === 'comoeutrabalho' && onSelectConsultoria) {
-                                    onSelectConsultoria();
-                                } else if (item.id === 'planos' && onSelectPlanos) {
-                                    onSelectPlanos();
-                                }
                             }}
                             className={`text-sm font-semibold transition-all duration-300 relative py-2 ${activeSection === item.id ? 'text-pure-white' : 'text-silver-mist hover:text-pure-white'
                                 }`}
@@ -96,11 +86,6 @@ export default function Header({ onSelectConsultoria, onSelectPlanos }: HeaderPr
                                 onClick={() => {
                                     closeMenu();
                                     setActiveSection(item.id);
-                                    if (item.id === 'comoeutrabalho' && onSelectConsultoria) {
-                                        onSelectConsultoria();
-                                    } else if (item.id === 'planos' && onSelectPlanos) {
-                                        onSelectPlanos();
-                                    }
                                 }}
                                 className={`text-base font-semibold py-3 border-b border-platinum-light/10 transition-colors ${activeSection === item.id ? 'text-pure-white bg-electric/5 px-2 -mx-2 rounded-sm' : 'text-silver-mist hover:text-pure-white'
                                     }`}

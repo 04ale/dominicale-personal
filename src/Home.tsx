@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import HeroBanner from './components/HeroBanner'
 import AboutMe from './components/AboutMe'
 import Problem from './components/Problem'
@@ -13,22 +13,17 @@ import Footer from './components/layout/Footer'
 import WhatsAppFloat from './components/layout/WhatsAppFloat'
 
 function Home() {
-    const [plansTab, setPlansTab] = useState<'presencial' | 'consultoria'>('presencial');
-
     return (
         <>
             <Preloader />
-            <Header 
-                onSelectConsultoria={() => setPlansTab('consultoria')} 
-                onSelectPlanos={() => setPlansTab('presencial')} 
-            />
+            <Header />
             <HeroBanner id="home" />
             <AboutMe id="sobremim" />
             <Problem id="problemas" />
             <RealResults id="resultados" />
             <Methods id="metodologia" />
             <HowItWorks id="comoeutrabalho" />
-            <Plans id="planos" activeTab={plansTab} setActiveTab={setPlansTab} />
+            <Plans id="planos" />
             <FinalCTA id="ctafinal" />
             <Footer />
             <WhatsAppFloat />

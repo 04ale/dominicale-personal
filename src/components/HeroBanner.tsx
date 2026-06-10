@@ -37,7 +37,7 @@ export default function HeroBanner({ id }: { id?: string }) {
 
                 {/* Description */}
                 <div className="text-lg md:text-xl text-silver-mist max-w-2xl mx-auto space-y-3 mb-12 font-medium drop-shadow-md">
-                    <p>Consultoria online com acompanhamento real, </p>
+                    <p>Treino presencial com acompanhamento individualizado, </p>
                     <p>ajustes semanais e foco em resultado estético e performance </p>
                 </div>
 

@@ -3,7 +3,7 @@ import { UserPlus, ClipboardList, CalendarCheck, Settings } from 'lucide-react';
 const steps = [
     {
         number: "01",
-        title: "Início da Consultoria",
+        title: "Início do Treinamento",
         description: <>Você toma a decisão e entra para o time, preenchendo uma <strong>avaliação física</strong> inicial completa.</>,
         icon: <UserPlus size={32} className="text-electric" />
     },
